@@ -1,0 +1,22 @@
+{
+  "name": "jsondb-lite",
+  "version": "1.2.0",
+  "description": "Modular JSON-file database engine with Node.js/Express and pure PHP API servers",
+  "scripts": {
+    "start": "node server/node/index.js",
+    "dev": "node --watch server/node/index.js",
+    "pm2:start": "pm2 start ecosystem.config.cjs",
+    "pm2:stop": "pm2 stop jsondb-lite",
+    "pm2:restart": "pm2 restart jsondb-lite"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "pm2": "^6.0.8"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
